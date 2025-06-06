@@ -172,3 +172,32 @@ if auto_refresh:
 # Footer
 st.markdown("---")
 st.markdown("🤖 Automated by Python Price Tracker | Last updated: " + datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+
+
+# Add this to your main.py
+class StreamlitPriceTracker(PriceTracker):
+    def __init__(self):
+        super().__init__()
+
+    def get_dashboard_data(self):
+        """Get data formatted for dashboard"""
+        try:
+            df = pd.read_csv('price_history.csv')
+            df['timestamp'] = pd.to_datetime(df['timestamp'])
+            return df
+        except FileNotFoundError:
+            return pd.DataFrame()
+
+    def get_current_summary(self):
+        """Get current price summary"""
+        df = self.get_dashboard_data()
+        if df.empty:
+            return None
+
+        latest_prices = df.groupby('site').last().reset_index()
+        return {
+            'best_price': latest_prices['price'].min(),
+            'best_site': latest_prices.loc[latest_prices['price'].idxmin(), 'site'],
+            'total_sites': len(latest_prices),
+            'below_threshold': len(latest_prices[latest_prices['price'] <= 10000])
+        }

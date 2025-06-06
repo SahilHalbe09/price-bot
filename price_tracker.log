@@ -77,3 +77,174 @@
 2025-06-06 10:01:42,600 - ERROR - Error reading price history: 'price'
 2025-06-06 10:01:42,603 - INFO - Price tracking session completed successfully
 2025-06-06 10:01:44,881 - INFO - Browser driver closed
+2025-06-06 10:58:10,293 - INFO - Starting comprehensive price check across all sites
+2025-06-06 10:58:10,293 - INFO - Checking Amazon India...
+2025-06-06 10:58:10,294 - INFO - Scraping Amazon India using static method
+2025-06-06 10:58:13,350 - INFO - Found price text for Amazon India: '8,367'
+2025-06-06 10:58:16,403 - INFO - Checking Flipkart...
+2025-06-06 10:58:16,404 - INFO - Scraping Flipkart using dynamic method
+2025-06-06 10:58:18,784 - INFO - Browser driver initialized successfully
+2025-06-06 10:58:36,062 - INFO - Primary selector timed out for Flipkart, trying backup
+2025-06-06 10:58:40,087 - INFO - Checking Myntra...
+2025-06-06 10:58:40,087 - INFO - Scraping Myntra using dynamic method
+2025-06-06 10:58:45,853 - INFO - Checking Casio Official...
+2025-06-06 10:58:45,853 - INFO - Scraping Casio Official using static method
+2025-06-06 10:59:00,998 - ERROR - Network error while scraping Casio Official: HTTPSConnectionPool(host='www.casio.com', port=443): Read timed out. (read timeout=15)
+2025-06-06 10:59:02,999 - INFO - Checking Swiss Time House...
+2025-06-06 10:59:02,999 - INFO - Scraping Swiss Time House using static method
+2025-06-06 10:59:18,168 - ERROR - Network error while scraping Swiss Time House: HTTPSConnectionPool(host='www.swisstimehouse.com', port=443): Read timed out. (read timeout=15)
+2025-06-06 10:59:21,169 - INFO - Checking Just In Time...
+2025-06-06 10:59:21,169 - INFO - Scraping Just In Time using static method
+2025-06-06 10:59:21,272 - ERROR - Network error while scraping Just In Time: 403 Client Error: Forbidden for url: https://justintime.in/products/casio-resin-black-digital-mens-watch-g987
+2025-06-06 10:59:24,274 - INFO - Checking Tata Cliq...
+2025-06-06 10:59:24,274 - INFO - Scraping Tata Cliq using dynamic method
+2025-06-06 10:59:31,356 - INFO - Checking Ajio...
+2025-06-06 10:59:31,356 - INFO - Scraping Ajio using dynamic method
+2025-06-06 10:59:46,967 - INFO - Primary selector timed out for Ajio, trying backup
+2025-06-06 11:00:02,216 - WARNING - Both selectors timed out for Ajio
+2025-06-06 11:00:02,218 - WARNING - Price element not found on Ajio
+2025-06-06 11:00:05,218 - INFO - Checking Helios...
+2025-06-06 11:00:05,218 - INFO - Scraping Helios using static method
+2025-06-06 11:00:07,669 - INFO - Price check completed. Retrieved 5 prices.
+2025-06-06 11:00:07,670 - ERROR - Error reading price history: 'price'
+2025-06-06 11:00:07,680 - INFO - Saved 5 price records to history
+2025-06-06 11:00:09,870 - INFO - Browser driver closed
+2025-06-06 11:03:10,050 - INFO - Starting comprehensive price check across all sites
+2025-06-06 11:03:10,051 - INFO - Checking Amazon India...
+2025-06-06 11:03:10,051 - INFO - Scraping Amazon India using static method
+2025-06-06 11:03:12,902 - INFO - Found price text for Amazon India: '8,367'
+2025-06-06 11:03:15,910 - INFO - Checking Flipkart...
+2025-06-06 11:03:15,910 - INFO - Scraping Flipkart using dynamic method
+2025-06-06 11:03:17,507 - INFO - Browser driver initialized successfully
+2025-06-06 11:03:34,805 - INFO - Primary selector timed out for Flipkart, trying backup
+2025-06-06 11:03:38,855 - INFO - Checking Myntra...
+2025-06-06 11:03:38,855 - INFO - Scraping Myntra using dynamic method
+2025-06-06 11:03:44,544 - INFO - Checking Casio Official...
+2025-06-06 11:03:44,544 - INFO - Scraping Casio Official using static method
+2025-06-06 11:03:59,669 - ERROR - Network error while scraping Casio Official: HTTPSConnectionPool(host='www.casio.com', port=443): Read timed out. (read timeout=15)
+2025-06-06 11:04:01,671 - INFO - Checking Swiss Time House...
+2025-06-06 11:04:01,671 - INFO - Scraping Swiss Time House using static method
+2025-06-06 11:04:11,436 - INFO - Checking Just In Time...
+2025-06-06 11:04:11,437 - INFO - Scraping Just In Time using static method
+2025-06-06 11:04:11,503 - ERROR - Network error while scraping Just In Time: 403 Client Error: Forbidden for url: https://justintime.in/products/casio-resin-black-digital-mens-watch-g987
+2025-06-06 11:04:14,505 - INFO - Checking Tata Cliq...
+2025-06-06 11:04:14,505 - INFO - Scraping Tata Cliq using dynamic method
+2025-06-06 11:04:21,595 - INFO - Checking Ajio...
+2025-06-06 11:04:21,595 - INFO - Scraping Ajio using dynamic method
+2025-06-06 11:04:37,281 - INFO - Primary selector timed out for Ajio, trying backup
+2025-06-06 11:04:52,658 - WARNING - Both selectors timed out for Ajio
+2025-06-06 11:04:52,659 - WARNING - Price element not found on Ajio
+2025-06-06 11:04:55,660 - INFO - Checking Helios...
+2025-06-06 11:04:55,660 - INFO - Scraping Helios using static method
+2025-06-06 11:04:57,967 - INFO - Price check completed. Retrieved 6 prices.
+2025-06-06 11:04:57,967 - ERROR - Error reading price history: 'price'
+2025-06-06 11:04:57,968 - INFO - Saved 6 price records to history
+2025-06-06 11:05:00,266 - INFO - Browser driver closed
+2025-06-06 11:12:42,364 - INFO - Starting comprehensive price check across all sites
+2025-06-06 11:12:42,365 - INFO - Checking Amazon India...
+2025-06-06 11:12:42,365 - INFO - Scraping Amazon India using static method
+2025-06-06 11:12:45,535 - INFO - Found price text for Amazon India: '8,367'
+2025-06-06 11:12:48,540 - INFO - Checking Flipkart...
+2025-06-06 11:12:48,540 - INFO - Scraping Flipkart using dynamic method
+2025-06-06 11:12:49,757 - INFO - Browser driver initialized successfully
+2025-06-06 11:13:07,353 - INFO - Primary selector timed out for Flipkart, trying backup
+2025-06-06 11:13:11,381 - INFO - Checking Myntra...
+2025-06-06 11:13:11,381 - INFO - Scraping Myntra using dynamic method
+2025-06-06 11:13:17,356 - INFO - Checking Casio Official...
+2025-06-06 11:13:17,356 - INFO - Scraping Casio Official using static method
+2025-06-06 11:13:20,686 - INFO - Starting G-Shock price tracking session
+2025-06-06 11:13:20,688 - INFO - Starting comprehensive price check across all sites
+2025-06-06 11:13:20,688 - INFO - Checking Amazon India...
+2025-06-06 11:13:20,688 - INFO - Scraping Amazon India using static method
+2025-06-06 11:13:23,997 - INFO - Found price text for Amazon India: '8,367'
+2025-06-06 11:13:27,008 - INFO - Checking Flipkart...
+2025-06-06 11:13:27,009 - INFO - Scraping Flipkart using dynamic method
+2025-06-06 11:13:28,258 - INFO - Browser driver initialized successfully
+2025-06-06 11:13:32,475 - ERROR - Network error while scraping Casio Official: HTTPSConnectionPool(host='www.casio.com', port=443): Read timed out. (read timeout=15)
+2025-06-06 11:13:34,477 - INFO - Checking Swiss Time House...
+2025-06-06 11:13:34,477 - INFO - Scraping Swiss Time House using static method
+2025-06-06 11:13:38,909 - INFO - Checking Just In Time...
+2025-06-06 11:13:38,909 - INFO - Scraping Just In Time using static method
+2025-06-06 11:13:39,015 - ERROR - Network error while scraping Just In Time: 403 Client Error: Forbidden for url: https://justintime.in/products/casio-resin-black-digital-mens-watch-g987
+2025-06-06 11:13:42,017 - INFO - Checking Tata Cliq...
+2025-06-06 11:13:42,017 - INFO - Scraping Tata Cliq using dynamic method
+2025-06-06 11:13:46,374 - INFO - Primary selector timed out for Flipkart, trying backup
+2025-06-06 11:13:50,409 - INFO - Checking Ajio...
+2025-06-06 11:13:50,410 - INFO - Scraping Ajio using dynamic method
+2025-06-06 11:13:50,422 - INFO - Checking Myntra...
+2025-06-06 11:13:50,422 - INFO - Scraping Myntra using dynamic method
+2025-06-06 11:13:56,840 - INFO - Checking Casio Official...
+2025-06-06 11:13:56,840 - INFO - Scraping Casio Official using static method
+2025-06-06 11:14:06,304 - INFO - Primary selector timed out for Ajio, trying backup
+2025-06-06 11:14:11,975 - ERROR - Network error while scraping Casio Official: HTTPSConnectionPool(host='www.casio.com', port=443): Read timed out. (read timeout=15)
+2025-06-06 11:14:13,977 - INFO - Checking Swiss Time House...
+2025-06-06 11:14:13,978 - INFO - Scraping Swiss Time House using static method
+2025-06-06 11:14:18,314 - INFO - Checking Just In Time...
+2025-06-06 11:14:18,314 - INFO - Scraping Just In Time using static method
+2025-06-06 11:14:18,443 - ERROR - Network error while scraping Just In Time: 403 Client Error: Forbidden for url: https://justintime.in/products/casio-resin-black-digital-mens-watch-g987
+2025-06-06 11:14:21,445 - INFO - Checking Tata Cliq...
+2025-06-06 11:14:21,445 - INFO - Scraping Tata Cliq using dynamic method
+2025-06-06 11:14:21,651 - WARNING - Both selectors timed out for Ajio
+2025-06-06 11:14:21,652 - WARNING - Price element not found on Ajio
+2025-06-06 11:14:24,653 - INFO - Checking Helios...
+2025-06-06 11:14:24,653 - INFO - Scraping Helios using static method
+2025-06-06 11:14:27,102 - INFO - Price check completed. Retrieved 6 prices.
+2025-06-06 11:14:27,102 - ERROR - Missing columns in CSV: ['timestamp', 'site', 'price']
+2025-06-06 11:14:27,103 - INFO - Consider deleting the CSV file to recreate it with proper headers
+2025-06-06 11:14:27,103 - INFO - Saved 6 price records to history
+2025-06-06 11:14:29,308 - INFO - Browser driver closed
+2025-06-06 11:14:29,350 - INFO - Checking Ajio...
+2025-06-06 11:14:29,350 - INFO - Scraping Ajio using dynamic method
+2025-06-06 11:14:45,166 - INFO - Primary selector timed out for Ajio, trying backup
+2025-06-06 11:15:00,467 - WARNING - Both selectors timed out for Ajio
+2025-06-06 11:15:00,467 - WARNING - Price element not found on Ajio
+2025-06-06 11:15:03,467 - INFO - Checking Helios...
+2025-06-06 11:15:03,469 - INFO - Scraping Helios using static method
+2025-06-06 11:15:05,708 - INFO - Price check completed. Retrieved 6 prices.
+2025-06-06 11:15:05,708 - ERROR - Missing columns in CSV: ['timestamp', 'site', 'price']
+2025-06-06 11:15:05,709 - INFO - Consider deleting the CSV file to recreate it with proper headers
+2025-06-06 11:15:05,709 - INFO - Saved 6 price records to history
+2025-06-06 11:15:05,725 - ERROR - Missing columns in CSV: ['timestamp', 'site', 'price']
+2025-06-06 11:15:05,725 - INFO - Consider deleting the CSV file to recreate it with proper headers
+2025-06-06 11:15:10,357 - INFO - Email alert sent successfully for Amazon India
+2025-06-06 11:15:13,554 - INFO - Email alert sent successfully for Flipkart
+2025-06-06 11:15:17,991 - INFO - Email alert sent successfully for Myntra
+2025-06-06 11:15:21,325 - INFO - Email alert sent successfully for Swiss Time House
+2025-06-06 11:15:24,520 - INFO - Email alert sent successfully for Tata Cliq
+2025-06-06 11:15:27,942 - INFO - Email alert sent successfully for Helios
+2025-06-06 11:15:27,943 - ERROR - Missing columns in CSV: ['timestamp', 'site', 'price']
+2025-06-06 11:15:27,943 - INFO - Consider deleting the CSV file to recreate it with proper headers
+2025-06-06 11:15:27,945 - INFO - Price tracking session completed successfully
+2025-06-06 11:15:30,172 - INFO - Browser driver closed
+2025-06-06 11:15:44,930 - INFO - Starting comprehensive price check across all sites
+2025-06-06 11:15:44,930 - INFO - Checking Amazon India...
+2025-06-06 11:15:44,931 - INFO - Scraping Amazon India using static method
+2025-06-06 11:15:47,876 - INFO - Found price text for Amazon India: '8,367'
+2025-06-06 11:15:50,881 - INFO - Checking Flipkart...
+2025-06-06 11:15:50,881 - INFO - Scraping Flipkart using dynamic method
+2025-06-06 11:15:52,189 - INFO - Browser driver initialized successfully
+2025-06-06 11:16:10,341 - INFO - Primary selector timed out for Flipkart, trying backup
+2025-06-06 11:16:14,376 - INFO - Checking Myntra...
+2025-06-06 11:16:14,376 - INFO - Scraping Myntra using dynamic method
+2025-06-06 11:16:19,964 - INFO - Checking Casio Official...
+2025-06-06 11:16:19,964 - INFO - Scraping Casio Official using static method
+2025-06-06 11:16:35,106 - ERROR - Network error while scraping Casio Official: HTTPSConnectionPool(host='www.casio.com', port=443): Read timed out. (read timeout=15)
+2025-06-06 11:16:37,107 - INFO - Checking Swiss Time House...
+2025-06-06 11:16:37,107 - INFO - Scraping Swiss Time House using static method
+2025-06-06 11:16:41,540 - INFO - Checking Just In Time...
+2025-06-06 11:16:41,540 - INFO - Scraping Just In Time using static method
+2025-06-06 11:16:41,646 - ERROR - Network error while scraping Just In Time: 403 Client Error: Forbidden for url: https://justintime.in/products/casio-resin-black-digital-mens-watch-g987
+2025-06-06 11:16:44,648 - INFO - Checking Tata Cliq...
+2025-06-06 11:16:44,648 - INFO - Scraping Tata Cliq using dynamic method
+2025-06-06 11:16:52,999 - INFO - Checking Ajio...
+2025-06-06 11:16:52,999 - INFO - Scraping Ajio using dynamic method
+2025-06-06 11:17:08,736 - INFO - Primary selector timed out for Ajio, trying backup
+2025-06-06 11:17:24,113 - WARNING - Both selectors timed out for Ajio
+2025-06-06 11:17:24,114 - WARNING - Price element not found on Ajio
+2025-06-06 11:17:27,115 - INFO - Checking Helios...
+2025-06-06 11:17:27,115 - INFO - Scraping Helios using static method
+2025-06-06 11:17:29,575 - INFO - Price check completed. Retrieved 6 prices.
+2025-06-06 11:17:29,577 - ERROR - Missing columns in CSV: ['timestamp', 'site', 'price']
+2025-06-06 11:17:29,577 - INFO - Consider deleting the CSV file to recreate it with proper headers
+2025-06-06 11:17:29,579 - INFO - Saved 6 price records to history
+2025-06-06 11:17:31,841 - INFO - Browser driver closed

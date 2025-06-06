@@ -234,15 +234,44 @@ class PriceTracker:
         This is like looking through old receipts to understand price trends.
         """
         try:
-            with open(HISTORY_FILE, 'r', newline='') as file:
+            import os
+
+            # Check if file exists and has content
+            if not os.path.exists(HISTORY_FILE) or os.path.getsize(HISTORY_FILE) == 0:
+                logger.info("No price history file found or file is empty. This appears to be the first run.")
+                return {'lowest_ever': float('inf'), 'records': []}
+
+            with open(HISTORY_FILE, 'r', newline='', encoding='utf-8') as file:
                 reader = csv.DictReader(file)
+
+                # Check if the required columns exist
+                if reader.fieldnames is None:
+                    logger.warning("CSV file appears to be empty or malformed")
+                    return {'lowest_ever': float('inf'), 'records': []}
+
+                required_columns = ['timestamp', 'site', 'price']
+                missing_columns = [col for col in required_columns if col not in reader.fieldnames]
+
+                if missing_columns:
+                    logger.error(f"Missing columns in CSV: {missing_columns}")
+                    logger.info("Consider deleting the CSV file to recreate it with proper headers")
+                    return {'lowest_ever': float('inf'), 'records': []}
+
                 records = list(reader)
 
                 if not records:
                     return {'lowest_ever': float('inf'), 'records': []}
 
                 # Find the lowest price ever recorded
-                prices = [float(record['price']) for record in records if record['price']]
+                prices = []
+                for record in records:
+                    try:
+                        if record.get('price'):
+                            prices.append(float(record['price']))
+                    except (ValueError, TypeError):
+                        logger.warning(f"Invalid price value found: {record.get('price')}")
+                        continue
+
                 lowest_ever = min(prices) if prices else float('inf')
 
                 return {
@@ -264,24 +293,22 @@ class PriceTracker:
         This is like keeping a detailed diary of all prices you've encountered.
         """
         try:
-            # Check if file exists to determine if we need to write headers
-            file_exists = False
-            try:
-                with open(HISTORY_FILE, 'r'):
-                    file_exists = True
-            except FileNotFoundError:
-                pass
+            import os
+
+            # Check if file exists and has content
+            file_exists = os.path.exists(HISTORY_FILE) and os.path.getsize(HISTORY_FILE) > 0
 
             current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             historical_data = self.get_historical_data()
 
-            with open(HISTORY_FILE, 'a', newline='') as file:
+            with open(HISTORY_FILE, 'a', newline='', encoding='utf-8') as file:
                 fieldnames = ['timestamp', 'site', 'price', 'is_new_low', 'below_threshold']
                 writer = csv.DictWriter(file, fieldnames=fieldnames)
 
+                # Write headers if file doesn't exist or is empty
                 if not file_exists:
                     writer.writeheader()
-                    logger.info("Created new price history file")
+                    logger.info("Created new price history file with headers")
 
                 for site_name, price in current_prices.items():
                     is_new_low = price < historical_data['lowest_ever']
@@ -299,6 +326,17 @@ class PriceTracker:
 
         except Exception as e:
             logger.error(f"Error saving price data: {e}")
+            # If there's an error and the file might be corrupted, let's ensure headers exist
+            try:
+                import os
+                if os.path.exists(HISTORY_FILE):
+                    with open(HISTORY_FILE, 'r', newline='', encoding='utf-8') as file:
+                        first_line = file.readline().strip()
+                        if first_line and 'timestamp' not in first_line:
+                            logger.warning(
+                                "CSV file exists but appears to be missing headers. Consider deleting it to recreate with proper headers.")
+            except:
+                pass
 
     def send_email_alert(self, alert_info):
         """
