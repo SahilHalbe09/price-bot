@@ -328,3 +328,33 @@
 2025-06-06 12:33:22,675 - INFO - Email alert sent successfully for Helios
 2025-06-06 12:33:22,678 - INFO - Price tracking session completed successfully
 2025-06-06 12:33:25,177 - INFO - Browser driver closed
+2025-06-06 12:34:29,231 - INFO - Starting comprehensive price check across all sites
+2025-06-06 12:34:29,232 - INFO - Checking Amazon India...
+2025-06-06 12:34:29,232 - INFO - Scraping Amazon India using static method
+2025-06-06 12:34:32,251 - INFO - Found price text for Amazon India: '8,367'
+2025-06-06 12:34:35,255 - INFO - Checking Flipkart...
+2025-06-06 12:34:35,255 - INFO - Scraping Flipkart using dynamic method
+2025-06-06 12:34:36,499 - INFO - Browser driver initialized successfully
+2025-06-06 12:34:53,949 - INFO - Primary selector timed out for Flipkart, trying backup
+2025-06-06 12:34:58,006 - INFO - Checking Myntra...
+2025-06-06 12:34:58,007 - INFO - Scraping Myntra using dynamic method
+2025-06-06 12:35:03,705 - INFO - Checking Casio Official...
+2025-06-06 12:35:03,705 - INFO - Scraping Casio Official using static method
+2025-06-06 12:35:18,801 - ERROR - Network error while scraping Casio Official: HTTPSConnectionPool(host='www.casio.com', port=443): Read timed out. (read timeout=15)
+2025-06-06 12:35:20,803 - INFO - Checking Swiss Time House...
+2025-06-06 12:35:20,803 - INFO - Scraping Swiss Time House using static method
+2025-06-06 12:35:25,329 - INFO - Checking Just In Time...
+2025-06-06 12:35:25,330 - INFO - Scraping Just In Time using static method
+2025-06-06 12:35:25,467 - ERROR - Network error while scraping Just In Time: 403 Client Error: Forbidden for url: https://justintime.in/products/casio-resin-black-digital-mens-watch-g987
+2025-06-06 12:35:28,470 - INFO - Checking Tata Cliq...
+2025-06-06 12:35:28,471 - INFO - Scraping Tata Cliq using dynamic method
+2025-06-06 12:35:36,541 - INFO - Checking Ajio...
+2025-06-06 12:35:36,542 - INFO - Scraping Ajio using dynamic method
+2025-06-06 12:35:51,997 - INFO - Primary selector timed out for Ajio, trying backup
+2025-06-06 12:36:07,209 - WARNING - Both selectors timed out for Ajio
+2025-06-06 12:36:07,212 - WARNING - Price element not found on Ajio
+2025-06-06 12:36:10,213 - INFO - Checking Helios...
+2025-06-06 12:36:10,214 - INFO - Scraping Helios using static method
+2025-06-06 12:36:12,572 - INFO - Price check completed. Retrieved 6 prices.
+2025-06-06 12:36:12,574 - INFO - Saved 6 price records to history
+2025-06-06 12:36:15,168 - INFO - Browser driver closed
