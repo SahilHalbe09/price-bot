@@ -1,7 +1,7 @@
 # config.py - Your control center for all settings and site information
 
 # Personal Settings - Adjust these to your preferences
-PRICE_THRESHOLD = 10000  # The price point where you want to be alerted
+PRICE_THRESHOLD = 7500  # The price point where you want to be alerted
 CHECK_INTERVAL_HOURS = 6  # How often to check prices
 
 # Email Configuration for Alerts

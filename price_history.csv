@@ -12,3 +12,47 @@ timestamp,site,price,is_new_low,below_threshold
 2025-06-06 12:36:12,Swiss Time House,9195.0,False,True
 2025-06-06 12:36:12,Tata Cliq,9195.0,False,True
 2025-06-06 12:36:12,Helios,9195.0,False,True
+2025-06-06 12:59:56,Amazon India,8367.0,False,False
+2025-06-06 12:59:56,Flipkart,9195.0,False,False
+2025-06-06 12:59:56,Myntra,9195.0,False,False
+2025-06-06 12:59:56,Swiss Time House,9195.0,False,False
+2025-06-06 12:59:56,Tata Cliq,9195.0,False,False
+2025-06-06 12:59:56,Ajio,9195.0,False,False
+2025-06-06 12:59:56,Helios,9195.0,False,False
+2025-06-06 13:06:47,Amazon India,8367.0,False,False
+2025-06-06 13:06:47,Flipkart,9195.0,False,False
+2025-06-06 13:06:47,Myntra,9195.0,False,False
+2025-06-06 13:06:47,Swiss Time House,9195.0,False,False
+2025-06-06 13:06:47,Tata Cliq,9195.0,False,False
+2025-06-06 13:06:47,Helios,9195.0,False,False
+2025-06-06 13:10:24,Amazon India,8367.0,False,False
+2025-06-06 13:10:24,Flipkart,9195.0,False,False
+2025-06-06 13:10:24,Myntra,9195.0,False,False
+2025-06-06 13:10:24,Swiss Time House,9195.0,False,False
+2025-06-06 13:10:24,Tata Cliq,9195.0,False,False
+2025-06-06 13:10:24,Helios,9195.0,False,False
+2025-06-06 13:14:24,Amazon India,8367.0,False,False
+2025-06-06 13:14:24,Flipkart,9195.0,False,False
+2025-06-06 13:14:24,Myntra,9195.0,False,False
+2025-06-06 13:14:24,Tata Cliq,9195.0,False,False
+2025-06-06 13:14:24,Helios,9195.0,False,False
+2025-06-06 13:26:44,Amazon India,8367.0,False,False
+2025-06-06 13:26:44,Flipkart,9195.0,False,False
+2025-06-06 13:26:44,Myntra,9195.0,False,False
+2025-06-06 13:26:44,Swiss Time House,9195.0,False,False
+2025-06-06 13:26:44,Tata Cliq,9195.0,False,False
+2025-06-06 13:26:44,Ajio,9195.0,False,False
+2025-06-06 13:26:44,Helios,9195.0,False,False
+2025-06-06 13:41:13,Amazon India,8367.0,False,False
+2025-06-06 13:41:13,Flipkart,9195.0,False,False
+2025-06-06 13:41:13,Myntra,9195.0,False,False
+2025-06-06 13:41:13,Swiss Time House,9195.0,False,False
+2025-06-06 13:41:13,Tata Cliq,9195.0,False,False
+2025-06-06 13:41:13,Ajio,9195.0,False,False
+2025-06-06 13:41:13,Helios,9195.0,False,False
+2025-06-06 13:51:30,Amazon India,8367.0,False,False
+2025-06-06 13:51:30,Flipkart,9195.0,False,False
+2025-06-06 13:51:30,Myntra,9195.0,False,False
+2025-06-06 13:51:30,Swiss Time House,9195.0,False,False
+2025-06-06 13:51:30,Tata Cliq,9195.0,False,False
+2025-06-06 13:51:30,Ajio,9195.0,False,False
