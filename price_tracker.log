@@ -1,0 +1,79 @@
+2025-06-05 20:48:43,224 - INFO - Starting G-Shock price tracking session
+2025-06-05 20:48:43,224 - INFO - Starting comprehensive price check across all sites
+2025-06-05 20:48:43,224 - INFO - Checking Amazon India...
+2025-06-05 20:48:43,224 - INFO - Scraping Amazon India using static method
+2025-06-05 20:48:46,158 - INFO - Found price text for Amazon India: '9,195'
+2025-06-05 20:48:49,196 - INFO - Checking Flipkart...
+2025-06-05 20:48:49,197 - INFO - Scraping Flipkart using dynamic method
+2025-06-05 20:48:50,475 - INFO - Browser driver initialized successfully
+2025-06-05 20:49:07,439 - INFO - Primary selector timed out for Flipkart, trying backup
+2025-06-05 20:49:11,573 - INFO - Checking Myntra...
+2025-06-05 20:49:11,575 - INFO - Scraping Myntra using dynamic method
+2025-06-05 20:49:20,691 - INFO - Checking Casio Official...
+2025-06-05 20:49:20,692 - INFO - Scraping Casio Official using static method
+2025-06-05 20:49:35,842 - ERROR - Network error while scraping Casio Official: HTTPSConnectionPool(host='www.casio.com', port=443): Read timed out. (read timeout=15)
+2025-06-05 20:49:37,844 - INFO - Checking Swiss Time House...
+2025-06-05 20:49:37,844 - INFO - Scraping Swiss Time House using static method
+2025-06-05 20:49:42,417 - INFO - Checking Just In Time...
+2025-06-05 20:49:42,417 - INFO - Scraping Just In Time using static method
+2025-06-05 20:49:45,799 - INFO - Checking Tata Cliq...
+2025-06-05 20:49:45,800 - INFO - Scraping Tata Cliq using dynamic method
+2025-06-05 20:49:52,504 - INFO - Checking Ajio...
+2025-06-05 20:49:52,505 - INFO - Scraping Ajio using dynamic method
+2025-06-05 20:49:59,299 - INFO - Checking Helios...
+2025-06-05 20:49:59,299 - INFO - Scraping Helios using static method
+2025-06-05 20:50:01,583 - INFO - Price check completed. Retrieved 8 prices.
+2025-06-05 20:50:01,585 - INFO - Saved 8 price records to history
+2025-06-05 20:50:01,602 - ERROR - Error reading price history: 'price'
+2025-06-05 20:50:05,832 - INFO - Email alert sent successfully for Amazon India
+2025-06-05 20:50:09,427 - INFO - Email alert sent successfully for Flipkart
+2025-06-05 20:50:12,672 - INFO - Email alert sent successfully for Myntra
+2025-06-05 20:50:16,311 - INFO - Email alert sent successfully for Swiss Time House
+2025-06-05 20:50:19,463 - INFO - Email alert sent successfully for Just In Time
+2025-06-05 20:50:22,619 - INFO - Email alert sent successfully for Tata Cliq
+2025-06-05 20:50:25,932 - INFO - Email alert sent successfully for Ajio
+2025-06-05 20:50:29,162 - INFO - Email alert sent successfully for Helios
+2025-06-05 20:50:29,165 - ERROR - Error reading price history: 'price'
+2025-06-05 20:50:29,171 - INFO - Price tracking session completed successfully
+2025-06-05 20:50:31,988 - INFO - Browser driver closed
+2025-06-06 09:59:31,479 - INFO - Starting G-Shock price tracking session
+2025-06-06 09:59:31,480 - INFO - Starting comprehensive price check across all sites
+2025-06-06 09:59:31,480 - INFO - Checking Amazon India...
+2025-06-06 09:59:31,480 - INFO - Scraping Amazon India using static method
+2025-06-06 09:59:34,626 - INFO - Found price text for Amazon India: '8,367'
+2025-06-06 09:59:37,693 - INFO - Checking Flipkart...
+2025-06-06 09:59:37,693 - INFO - Scraping Flipkart using dynamic method
+2025-06-06 09:59:44,715 - INFO - Browser driver initialized successfully
+2025-06-06 10:00:02,428 - INFO - Primary selector timed out for Flipkart, trying backup
+2025-06-06 10:00:06,453 - INFO - Checking Myntra...
+2025-06-06 10:00:06,454 - INFO - Scraping Myntra using dynamic method
+2025-06-06 10:00:12,560 - INFO - Checking Casio Official...
+2025-06-06 10:00:12,560 - INFO - Scraping Casio Official using static method
+2025-06-06 10:00:27,909 - ERROR - Network error while scraping Casio Official: HTTPSConnectionPool(host='www.casio.com', port=443): Read timed out. (read timeout=15)
+2025-06-06 10:00:29,911 - INFO - Checking Swiss Time House...
+2025-06-06 10:00:29,911 - INFO - Scraping Swiss Time House using static method
+2025-06-06 10:00:34,448 - INFO - Checking Just In Time...
+2025-06-06 10:00:34,448 - INFO - Scraping Just In Time using static method
+2025-06-06 10:00:34,894 - ERROR - Network error while scraping Just In Time: 403 Client Error: Forbidden for url: https://justintime.in/products/casio-resin-black-digital-mens-watch-g987
+2025-06-06 10:00:37,895 - INFO - Checking Tata Cliq...
+2025-06-06 10:00:37,895 - INFO - Scraping Tata Cliq using dynamic method
+2025-06-06 10:00:45,298 - INFO - Checking Ajio...
+2025-06-06 10:00:45,298 - INFO - Scraping Ajio using dynamic method
+2025-06-06 10:01:00,869 - INFO - Primary selector timed out for Ajio, trying backup
+2025-06-06 10:01:16,168 - WARNING - Both selectors timed out for Ajio
+2025-06-06 10:01:16,168 - WARNING - Price element not found on Ajio
+2025-06-06 10:01:19,169 - INFO - Checking Helios...
+2025-06-06 10:01:19,169 - INFO - Scraping Helios using static method
+2025-06-06 10:01:21,569 - INFO - Price check completed. Retrieved 6 prices.
+2025-06-06 10:01:21,585 - ERROR - Error reading price history: 'price'
+2025-06-06 10:01:21,585 - INFO - Saved 6 price records to history
+2025-06-06 10:01:21,610 - ERROR - Error reading price history: 'price'
+2025-06-06 10:01:25,672 - INFO - Email alert sent successfully for Amazon India
+2025-06-06 10:01:29,260 - INFO - Email alert sent successfully for Flipkart
+2025-06-06 10:01:32,646 - INFO - Email alert sent successfully for Myntra
+2025-06-06 10:01:35,956 - INFO - Email alert sent successfully for Swiss Time House
+2025-06-06 10:01:39,288 - INFO - Email alert sent successfully for Tata Cliq
+2025-06-06 10:01:42,598 - INFO - Email alert sent successfully for Helios
+2025-06-06 10:01:42,600 - ERROR - Error reading price history: 'price'
+2025-06-06 10:01:42,603 - INFO - Price tracking session completed successfully
+2025-06-06 10:01:44,881 - INFO - Browser driver closed
