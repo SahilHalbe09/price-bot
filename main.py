@@ -295,17 +295,19 @@ class PriceTracker:
         try:
             import os
 
-            # Check if file exists and has content
-            file_exists = os.path.exists(HISTORY_FILE) and os.path.getsize(HISTORY_FILE) > 0
-
             current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             historical_data = self.get_historical_data()
 
+            # Define fieldnames for the CSV
+            fieldnames = ['timestamp', 'site', 'price', 'is_new_low', 'below_threshold']
+
+            # Check if file exists and has content
+            file_exists = os.path.exists(HISTORY_FILE) and os.path.getsize(HISTORY_FILE) > 0
+
             with open(HISTORY_FILE, 'a', newline='', encoding='utf-8') as file:
-                fieldnames = ['timestamp', 'site', 'price', 'is_new_low', 'below_threshold']
                 writer = csv.DictWriter(file, fieldnames=fieldnames)
 
-                # Write headers if file doesn't exist or is empty
+                # Write headers only if file doesn't exist or is empty
                 if not file_exists:
                     writer.writeheader()
                     logger.info("Created new price history file with headers")
@@ -326,17 +328,19 @@ class PriceTracker:
 
         except Exception as e:
             logger.error(f"Error saving price data: {e}")
-            # If there's an error and the file might be corrupted, let's ensure headers exist
+            # If there's an error, try to ensure headers exist
             try:
-                import os
                 if os.path.exists(HISTORY_FILE):
                     with open(HISTORY_FILE, 'r', newline='', encoding='utf-8') as file:
                         first_line = file.readline().strip()
-                        if first_line and 'timestamp' not in first_line:
-                            logger.warning(
-                                "CSV file exists but appears to be missing headers. Consider deleting it to recreate with proper headers.")
-            except:
-                pass
+                        if not first_line or 'timestamp' not in first_line:
+                            # File exists but has no headers, recreate with headers
+                            with open(HISTORY_FILE, 'w', newline='', encoding='utf-8') as new_file:
+                                writer = csv.DictWriter(new_file, fieldnames=fieldnames)
+                                writer.writeheader()
+                                logger.warning("Recreated CSV file with proper headers")
+            except Exception as e2:
+                logger.error(f"Could not fix CSV headers: {e2}")
 
     def send_email_alert(self, alert_info):
         """
